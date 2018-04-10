@@ -11,12 +11,14 @@
     <link rel="shortcut icon" href="/img/qiqiuicon.png">
     <link rel="stylesheet" href="/css/style.css?v=1.2.8">
     
+        <link rel="stylesheet" href="/css/third-party/gitment.css?v=1.2.8">
+    
     <script type="text/javascript">
         // Data Center
         var DC = {
             reward:	true,
-            lv: JSON.parse('{"enable":false,"app_id":null,"app_key":null,"icon":true}'),
-            v: JSON.parse('{"enable":true,"appid":null,"appkey":null,"notify":true,"verify":true,"placeholder":"八嘎雅鹿，多多指教。","avatar":"wavatar"}'),
+            lv: JSON.parse('{"enable":true,"app_id":null,"app_key":null,"icon":true}'),
+            v: JSON.parse('{"enable":false,"appid":null,"appkey":null,"notify":false,"verify":false,"placeholder":"八嘎雅鹿，多多指教。","avatar":"wavatar"}'),
             g: JSON.parse('{"enable":true,"lazy":true,"owner":"nainiuainiunai","repo":"liuyan","oauth":{"client_id":"aa3cc1d6794562fb2c54","client_secret":"68081295573ba7ee3f696fab4b2e4136a4cb6a41"},"perPage":10}')
         };
     </script>
@@ -177,16 +179,26 @@
 
 
             
+	<span id="/2018/04/07/你好，世界/" class="leancloud_visitors" data-flag-title="你好，世界" title="你好，世界">
+		
+			<i class="icon icon-eye"></i>
+		
+		<span class="leancloud-visitors-count"></span>
+	</span>
+ 
 
             
-    <span class="leancloud-comment">
+
+
+<span class="post-comments-counter" id="/2018/04/07/你好，世界/">
+    <span class="post-meta-item-icon">
         <i class="icon icon-comment-o"></i>
-        <a href="/2018/04/07/你好，世界/#comment">
-            <span class="valine-comment-count" data-xid="/2018/04/07/你好，世界/"></span>
-        </a>
     </span>
-
-
+    
+    <a href="/2018/04/07/你好，世界/#gitment-display-button">
+        <span class="post-comments-count gitment-comments-count" itemprop="commentsCount"></span>
+    </a>
+</span>
 
             
   <span class="music"><i class="icon icon-music"></i></span>
@@ -417,13 +429,32 @@
         </div>
         
             
-    <div id="comment"></div>
+
+
+      
+    <div onclick="ShowGitment()" id="gitment-display-button" style="display: block;">
+        <span>显示 Gitment 评论</span>
+    </div>
+    <div id="gitment" style="display: none;"></div>
 
 
 
         
     </div>
     
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="prev">
+      <a href="/2018/04/10/aajax笔记/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">慕课网ajax笔记（一）</h4>
+      </a>
+    </div>
+  
+
+  
+</nav>
+
 
     
     
@@ -577,13 +608,15 @@
 
 
     
-        <script type="text/javascript" src="https://cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<script type="text/javascript" src="//unpkg.com/valine/dist/Valine.min.js"></script>
-<script type="text/javascript" src="/js/plugins/valine.js?v=1.2.8"></script>
     
+        <script type="text/javascript" src="/js/plugins/gitmint.browser.js?v=1.2.8"></script>
+<script type="text/javascript" src="/js/plugins/gitment.js?v=1.2.8"></script>
     
 
 
+
+<script type="text/javascript" src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+<script type="text/javascript" src="/js/plugins/leancloud_visitors.js?v=1.2.8"></script>
 
 
 

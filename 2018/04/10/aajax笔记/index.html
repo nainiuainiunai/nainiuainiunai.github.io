@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    
+    
+    <title>慕课网ajax笔记（一） | 勇敢的心 | 诚实憨厚，追逐繁星的松</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="keywords" content="JavaScript">
+    <link rel="shortcut icon" href="/img/qiqiuicon.png">
+    <link rel="stylesheet" href="/css/style.css?v=1.2.8">
+    
+        <link rel="stylesheet" href="/css/third-party/gitment.css?v=1.2.8">
+    
+    <script type="text/javascript">
+        // Data Center
+        var DC = {
+            reward:	true,
+            lv: JSON.parse('{"enable":true,"app_id":null,"app_key":null,"icon":true}'),
+            v: JSON.parse('{"enable":false,"appid":null,"appkey":null,"notify":false,"verify":false,"placeholder":"八嘎雅鹿，多多指教。","avatar":"wavatar"}'),
+            g: JSON.parse('{"enable":true,"lazy":true,"owner":"nainiuainiunai","repo":"liuyan","oauth":{"client_id":"aa3cc1d6794562fb2c54","client_secret":"68081295573ba7ee3f696fab4b2e4136a4cb6a41"},"perPage":10}')
+        };
+    </script>
+    <script type="text/javascript">
+        window.lazyScripts=[];
+    </script>
+</head>
+
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap">
+      
+      <img src="/img/brand.jpg" class="brand-bg">
+      
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/13446239_14043059488.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">奶牛爱牛奶</h5>
+          <a href="mailto:学而无涯，砥砺前行。" title="学而无涯，砥砺前行。" class="mail">
+            
+              <span>学</span>
+            
+              <span>而</span>
+            
+              <span>无</span>
+            
+              <span>涯</span>
+            
+              <span>，</span>
+            
+              <span>砥</span>
+            
+              <span>砺</span>
+            
+              <span>前</span>
+            
+              <span>行</span>
+            
+              <span>。</span>
+            
+          </a>
+        </hgroup>
+        
+        <ul class="menu-link">
+          
+              <li>
+                <a href="https://github.com/nainiuainiunai" target="_blank">
+                  <i class="icon icon-lg icon-github"></i>
+                </a>
+              </li>
+            
+              <li>
+                <a href="http://music.163.com/#/user/home?id=59226171" target="_blank">
+                  <i class="icon icon-lg icon-music"></i>
+                </a>
+              </li>
+            
+              <li>
+                <a href="https://space.bilibili.com/13810795/#/" target="_blank">
+                  <i class="icon icon-lg icon-gamepad"></i>
+                </a>
+              </li>
+            
+        </ul>
+        
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                首页
+              </a>
+            </li>
+        
+            <li class="">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                归档
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row clearfix">
+        <a href="javascript:;" class="header-icon pull-left waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">
+            <span>慕课网ajax笔记（一）</span>
+            
+        </div>
+        
+        <a href="javascript:;" id="site_search_btn" class="header-icon pull-right waves-effect waves-circle waves-light">
+            <i class="icon icon-lg icon-search"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+    <img src="/img/c8f85ee084c7b75cc1cda69f272659b0.jpg" class="header-bg">
+    <div class="container fade-scale">
+        <h1 class="title">慕课网ajax笔记（一）</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2018-04-10T09:34:13.000Z" itemprop="datePublished" class="page-time">
+  2018-04-10
+</time>
+
+
+            
+        </h5>
+        
+    </div>
+    
+
+</header>
+
+<div id="site_search">
+    <div class="search-title clearfix">
+        <span class="pull-left">
+          <i class="icon icon-lg icon-search"></i>
+        </span>
+        <input type="text" id="local-search-input" name="q" results="0" placeholder="search my blog..." class="form-control pull-left"/>
+        <a href="javascript:;" class="close pull-right waves-effect waves-circle waves-light">
+          <i class="icon icon-lg icon-close"></i>
+        </a>
+    </div>
+    <div id="local-search-result"></div>
+</div>
+
+
+<div class="container body-wrap">
+    <article id="post-aajax笔记"
+  class="post-article article-type-post" itemprop="blogPost">
+    <div class="post-card">
+        <h1 class="post-card-title">慕课网ajax笔记（一）</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2018-04-10 17:34:13" datetime="2018-04-10T09:34:13.000Z"  itemprop="datePublished">2018-04-10</time>
+
+            
+
+
+            
+	<span id="/2018/04/10/aajax笔记/" class="leancloud_visitors" data-flag-title="慕课网ajax笔记（一）" title="慕课网ajax笔记（一）">
+		
+			<i class="icon icon-eye"></i>
+		
+		<span class="leancloud-visitors-count"></span>
+	</span>
+ 
+
+            
+
+
+<span class="post-comments-counter" id="/2018/04/10/aajax笔记/">
+    <span class="post-meta-item-icon">
+        <i class="icon icon-comment-o"></i>
+    </span>
+    
+    <a href="/2018/04/10/aajax笔记/#gitment-display-button">
+        <span class="post-comments-count gitment-comments-count" itemprop="commentsCount"></span>
+    </a>
+</span>
+
+            
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            
+            <h3 id="ajax基础知识了解"><a href="#ajax基础知识了解" class="headerlink" title="ajax基础知识了解"></a>ajax基础知识了解</h3><a id="more"></a>
+<h3 id="第一章介绍"><a href="#第一章介绍" class="headerlink" title="第一章介绍"></a>第一章介绍</h3><p>ajax不是某种编程语言，是一种在无需重新加载整个网页的请情况之下更新部分网页的技术。</p>
+<h3 id="第二章ajax概念介绍"><a href="#第二章ajax概念介绍" class="headerlink" title="第二章ajax概念介绍"></a>第二章ajax概念介绍</h3><h5 id="1-同步和异步"><a href="#1-同步和异步" class="headerlink" title="1.同步和异步"></a>1.同步和异步</h5><p>同步:</p>
+<figure class="image-box">
+                <img src=").png" alt="![1]()](![1" title="" class="">
+                <p>![1]()](![1</p>
+            </figure>
+<p>异步：<br><figure class="image-box">
+                <img src=").png" alt="![2]()](![2" title="" class="">
+                <p>![2]()](![2</p>
+            </figure></p>
+<p>为什么之前一开始网页没有进行异步操作呢？因为那时候还没有出现XmlHttpRequest这个对象，当这个对象出现的时候才实现了不用刷新整个页面实现后台和服务器数据交换！</p>
+<h6 id="实现Ajax技术需要三个方面内容"><a href="#实现Ajax技术需要三个方面内容" class="headerlink" title="实现Ajax技术需要三个方面内容:"></a>实现Ajax技术需要三个方面内容:</h6><figure class="image-box">
+                <img src=").png" alt="![3]()](![3" title="" class="">
+                <p>![3]()](![3</p>
+            </figure>
+<h5 id="2-XmlHttpRequest对象创建"><a href="#2-XmlHttpRequest对象创建" class="headerlink" title="2.XmlHttpRequest对象创建"></a>2.XmlHttpRequest对象创建</h5><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> request = <span class="keyword">new</span> XmlHttpRequest();</span></pre></td></tr></table></figure>
+<h5 id="3-http请求"><a href="#3-http请求" class="headerlink" title="3.http请求"></a>3.http请求</h5><p>   http是计算机通过网络进行通信的规则，是一种无状态协议（指的是不建立持久链接），</p>
+<p>  完整的http请求过程，通常包括以下七个步骤：</p>
+<figure class="image-box">
+                <img src=").png" alt="![4]( )](![4" title="" class="">
+                <p>![4]( )](![4</p>
+            </figure>
+<p> 一个http请求一般由四部分构成：</p>
+<figure class="image-box">
+                <img src=").png" alt="![5]()](![5" title="" class="">
+                <p>![5]()](![5</p>
+            </figure>
+<h6 id="get方法和post方法"><a href="#get方法和post方法" class="headerlink" title="get方法和post方法"></a>get方法和post方法</h6><figure class="image-box">
+                <img src=").png" alt="![6]()](![6" title="" class="">
+                <p>![6]()](![6</p>
+            </figure>
+<p> 一个http响应一般由三部分构成：<br><figure class="image-box">
+                <img src=").png" alt="![7]()](![7" title="" class="">
+                <p>![7]()](![7</p>
+            </figure><br>http状态码：</p>
+<figure class="image-box">
+                <img src=").png" alt="![8]()](![8" title="" class="">
+                <p>![8]()](![8</p>
+            </figure>
+<h5 id="4-XmlHttpRequest发送请求"><a href="#4-XmlHttpRequest发送请求" class="headerlink" title="4.XmlHttpRequest发送请求"></a>4.XmlHttpRequest发送请求</h5><figure class="image-box">
+                <img src=").png" alt="![9]()](![9" title="" class="">
+                <p>![9]()](![9</p>
+            </figure>
+<p>open（get or post， 相对地址或绝对地址，是否异步/true or false)<br>send方法当open方式为post时需要填写参数,如：<br><figure class="image-box">
+                <img src=").png" alt="![10]()](![10" title="" class="">
+                <p>![10]()](![10</p>
+            </figure></p>
+<h5 id="5-XmlHttpRequest取得响应"><a href="#5-XmlHttpRequest取得响应" class="headerlink" title="5.XmlHttpRequest取得响应"></a>5.XmlHttpRequest取得响应</h5><ul>
+<li>responseText： 获得字符串形式的响应数据</li>
+<li>responseXML ：获得XML形式的响应数据</li>
+<li>status和statusText：以数字和文本形式返回HTTP状态。</li>
+<li>getAllResponseHeader(): 获取所有的响应报头。</li>
+<li>getResponseHeader():查询响应中的某个字段的值。</li>
+</ul>
+<p><strong>如何去判断响应是否完成了？</strong><br>记住一个重要的一个属性<strong>readyState</strong>，监听这个属性的改变来确认当前响应的状态</p>
+<figure class="image-box">
+                <img src=").png" alt="![11]()](![11" title="" class="">
+                <p>![11]()](![11</p>
+            </figure>
+<p>下面代码可以完成监听：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> request = <span class="keyword">new</span> XmlHttpRequest();</span><br><span class="line">request.open(<span class="string">"get"</span>,<span class="string">"get.php"</span>,<span class="literal">true</span>);</span><br><span class="line">request.send();</span><br><span class="line"><span class="comment">// 监听readyState属性变化，绑定事件</span></span><br><span class="line">request.onreadystatechange = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="keyword">if</span>(request.readyState===<span class="number">4</span>&amp;&amp;reques.status===<span class="number">200</span>)&#123;</span><br><span class="line">    <span class="comment">// 执行的结构体</span></span><br><span class="line">    request.responseText</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="明天继续学习剩下的三章哦。"><a href="#明天继续学习剩下的三章哦。" class="headerlink" title="明天继续学习剩下的三章哦。"></a>明天继续学习剩下的三章哦。</h2><h6 id="英语背诵表格"><a href="#英语背诵表格" class="headerlink" title="英语背诵表格"></a>英语背诵表格</h6><table>
+<thead>
+<tr>
+<th style="text-align:center"><em>English</em></th>
+<th style="text-align:center">automatic</th>
+<th style="text-align:center">intend</th>
+<th style="text-align:center">conduct</th>
+<th style="text-align:center">liar</th>
+<th style="text-align:center">illegal</th>
+<th style="text-align:center">ending</th>
+<th style="text-align:center">individual</th>
+<th style="text-align:center">register</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">中文释义</td>
+<td style="text-align:center">自动化的</td>
+<td style="text-align:center">想要</td>
+<td style="text-align:center">指挥</td>
+<td style="text-align:center">说谎的人</td>
+<td style="text-align:center">不合法的</td>
+<td style="text-align:center">结局</td>
+<td style="text-align:center">独立的</td>
+<td style="text-align:center">注册</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><em>English</em></th>
+<th style="text-align:center">economical</th>
+<th style="text-align:center">hint</th>
+<th style="text-align:center">ensure</th>
+<th style="text-align:center">alter</th>
+<th style="text-align:center">remark</th>
+<th style="text-align:center">overrall</th>
+<th style="text-align:center">award</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">中文释义</td>
+<td style="text-align:center">节约的</td>
+<td style="text-align:center">建议，暗示</td>
+<td style="text-align:center">确保</td>
+<td style="text-align:center">改变</td>
+<td style="text-align:center">评论</td>
+<td style="text-align:center">全面地</td>
+<td style="text-align:center">奖品</td>
+</tr>
+</tbody>
+</table>
+
+        </div>
+        
+<blockquote class="post-copyright">
+    <div class="content">
+        
+<span class="post-time">
+    post.last_updated<time datetime="2018-04-10T13:27:56.187Z" itemprop="dateUpdated">2018-04-10 21:27:56</time>
+</span><br>
+
+
+        
+        转载注明出处，原文地址：<a href="/2018/04/10/aajax笔记/" target="_blank" rel="external">http://yoursite.com/2018/04/10/aajax笔记/</a>
+        
+    </div>
+    <footer>
+        <a href="http://yoursite.com">
+            <img src="/img/13446239_14043059488.jpg" alt="奶牛爱牛奶">
+            奶牛爱牛奶
+        </a>
+    </footer>
+</blockquote>
+
+        
+            <div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+            
+        
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript/">JavaScript</a></li></ul>
+
+            <div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2018/04/10/aajax笔记/&title=《慕课网ajax笔记（一）》 — 勇敢的心&pic=http://yoursite.com/img/13446239_14043059488.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2018/04/10/aajax笔记/&title=《慕课网ajax笔记（一）》 — 勇敢的心&source=ajax基础知识了解" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+        </div>
+        
+            
+
+
+      
+    <div onclick="ShowGitment()" id="gitment-display-button" style="display: block;">
+        <span>显示 Gitment 评论</span>
+    </div>
+    <div id="gitment" style="display: none;"></div>
+
+
+
+        
+    </div>
+    
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+  
+
+  
+    <div class="next">
+      <a href="/2018/04/07/你好，世界/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">你好，世界</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+    
+    
+        <aside class="post-widget">
+            <nav class="post-toc-wrap" id="post-toc">
+                <strong>目录</strong>
+                <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#ajax基础知识了解"><span class="post-toc-number">1.</span> <span class="post-toc-text">ajax基础知识了解</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#第一章介绍"><span class="post-toc-number">2.</span> <span class="post-toc-text">第一章介绍</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#第二章ajax概念介绍"><span class="post-toc-number">3.</span> <span class="post-toc-text">第二章ajax概念介绍</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#明天继续学习剩下的三章哦。"><span class="post-toc-number"></span> <span class="post-toc-text">明天继续学习剩下的三章哦。</span></a>
+            </nav>
+            <div class="toc-bar"><div>
+        </aside>
+    
+</article>
+
+    <div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        感谢你的支持，松会努力的
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/img/reward-wechat.png" alt="打赏二维码">
+        </div>
+        
+        <label class="reward-toggle">
+            <input id="rewardToggle" type="checkbox" class="reward-toggle-check"
+                data-wechat="/img/reward-wechat.png" data-alipay="/img/reward-alipay.jpg">
+            <div class="reward-toggle-ctrol">
+                <span class="reward-toggle-item wechat">微信</span>
+                <span class="reward-toggle-label"></span>
+                <span class="reward-toggle-item alipay">支付宝</span>
+            </div>
+        </label>
+        
+    </div>
+</div>
+
+    
+</div>
+
+        <footer class="footer">
+    
+    <div class="top">
+        
+        
+            <p>
+    <span>Links：</span>
+    
+    <span class="blogroll-item">
+        <a href="https://www.lujingtao.com" target="_blank">HOME</a>
+    </span>
+    
+    <span class="blogroll-item">
+        <a href="https://www.gitee.com" target="_blank">gitee</a>
+    </span>
+    
+    <span class="blogroll-item">
+        <a href="https://www.coding.net" target="_blank">coding</a>
+    </span>
+    
+</p>
+
+        
+    </div>
+    
+    <div class="bottom">
+        <p>
+            <span>
+                奶牛爱牛奶 &copy; 2017 - 2018
+            </span>
+        		
+           	
+            
+            
+            <span>
+	            Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/codefine/hexo-theme-mellow" target="_blank">hexo-theme-mellow</a>
+            </span>
+            
+            
+            
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2018/04/10/aajax笔记/&title=《慕课网ajax笔记（一）》 — 勇敢的心&pic=http://yoursite.com/img/13446239_14043059488.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2018/04/10/aajax笔记/&title=《慕课网ajax笔记（一）》 — 勇敢的心&source=ajax基础知识了解" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACMElEQVR42u3aQW7DMAwF0dz/0u62QCBrPukWMDVeBYZi62XBUCQ/H3xdv677Nd/rv7+7eg55S+uSIUPGaxnX7bV6wffLVpsgzyHvXa2RIUPGOQwSQPl2V5u4X3n/ebNnGTJkyMChlofXlCRDhgwZNcYmXWuvkSFDhoz0EJsmgjyJTMt2MmTIOI3Bq+7///lP+hsyZMh4FeMKL1Ju4+ldGl6Xu5IhQ8ZoBg9wacrIn8nvb94iQ4aMYxhkW/3CWf9H2VQNZciQMZRRK5DxAyeH1ZqdMmTIOI2R3ufhmAdT8hwZMmScwEi/kGI4jCSaS6QMGTJGM/jwBFnZSfj4KNgmlMuQIWMco3ZkDdqKeJCCPGEJliFDxmhG2rDkIZWw+eBF6z9EhgwZoxk8cUyTSH70rZXhZMiQMYlRC5fpAZhvt3ZsliFDxmxGp0yfhtfammDYQoYMGaMZaS6Jgl0jM23NjMiQIWM0gxfc+ehDv2AXIGXIkDGakSZqPHVL00R+P+hsyJAhYwSjPxCWFun6pDjDlSFDxggGH5JIxynSQBwPVciQIeMYRtpcJLB+mhjAZMiQMZRxhRcvt9Uw5JmbpFCGDBnjGLU2JJ/gqDUAHpsZkSFDxiBG5yAalMMeDbiotylDhoxxjDTw8SgeD3jhqpoMGTJkkLSMlPWfal5u3ihDhgwZpSYBb5R2mqwyZMg4h1EbquDtgVqAJkduGTJknMBIj46d5mL6Qzw1oiFDhozXMn4ANsuTYT/9dj0AAAAASUVORK5CYII=" alt="微信分享二维码">
+</div>
+
+
+    
+    <!-- main-js -->
+<script type="text/javascript" src="//cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
+<script type="text/javascript" src="/js/plugins/fastclick.js?v=1.2.8"></script>
+
+<script type="text/javascript" src="https://cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+
+<script type="text/javascript" src="/js/method.js?v=1.2.8"></script>
+<script type="text/javascript" src="/js/blog.js?v=1.2.8"></script>
+
+<!-- third-party -->
+
+
+
+
+
+<script type="text/javascript" src="/js/plugins/local_search.js?v=1.2.8"></script>
+<script type="text/javascript">
+	var search_path = "search.xml";
+	if (search_path.length === 0) {
+		search_path = "search.xml";
+	}
+	var path = "/" + search_path;
+	searchFunc(path, "local-search-input", "local-search-result");
+</script>
+
+
+
+    
+    
+        <script type="text/javascript" src="/js/plugins/gitmint.browser.js?v=1.2.8"></script>
+<script type="text/javascript" src="/js/plugins/gitment.js?v=1.2.8"></script>
+    
+
+
+
+<script type="text/javascript" src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+<script type="text/javascript" src="/js/plugins/leancloud_visitors.js?v=1.2.8"></script>
+
+
+
+    <!-- mathjax config similar to math.stackexchange -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+            processEscapes: true,
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+
+
+    <script>
+    (function() {
+        var OriginTitile = document.title, titleTime;
+        document.addEventListener('visibilitychange', function() {
+            if (document.hidden) {
+                document.title = '奶牛需要你的关注';
+                clearTimeout(titleTime);
+            } else {
+                document.title = '哇塞，奶牛？';
+                titleTime = setTimeout(function() {
+                    document.title = OriginTitile;
+                },2000);
+            }
+        });
+    })();
+</script>
+
+
+    
+</body>
+</html>
