@@ -204,65 +204,65 @@
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
             
-            <h3 id="ajax基础知识了解"><a href="#ajax基础知识了解" class="headerlink" title="ajax基础知识了解"></a>ajax基础知识了解</h3><a id="more"></a>
-<h3 id="第一章介绍"><a href="#第一章介绍" class="headerlink" title="第一章介绍"></a>第一章介绍</h3><p>ajax不是某种编程语言，是一种在无需重新加载整个网页的请情况之下更新部分网页的技术。</p>
-<h3 id="第二章ajax概念介绍"><a href="#第二章ajax概念介绍" class="headerlink" title="第二章ajax概念介绍"></a>第二章ajax概念介绍</h3><h5 id="1-同步和异步"><a href="#1-同步和异步" class="headerlink" title="1.同步和异步"></a>1.同步和异步</h5><p>同步:</p>
+            <h2 id="Ajax基础知识了解"><a href="#Ajax基础知识了解" class="headerlink" title="Ajax基础知识了解"></a>Ajax基础知识了解</h2><a id="more"></a>
+<h3 id="第一章介绍"><a href="#第一章介绍" class="headerlink" title="第一章介绍"></a>第一章介绍</h3><p>Ajax不是某种编程语言，是一种在无需重新加载整个网页的请情况之下更新部分网页的技术。</p>
+<h3 id="第二章Ajax概念介绍"><a href="#第二章Ajax概念介绍" class="headerlink" title="第二章Ajax概念介绍"></a>第二章Ajax概念介绍</h3><h5 id="1-同步和异步"><a href="#1-同步和异步" class="headerlink" title="1.同步和异步"></a>1.同步和异步</h5><p>同步:</p>
 <figure class="image-box">
-                <img src=").png" alt="![1]()](![1" title="" class="">
-                <p>![1]()](![1</p>
+                <img src="1.png" alt="" title="" class="">
+                <p></p>
             </figure>
 <p>异步：<br><figure class="image-box">
-                <img src=").png" alt="![2]()](![2" title="" class="">
-                <p>![2]()](![2</p>
+                <img src="2.png" alt="" title="" class="">
+                <p></p>
             </figure></p>
-<p>为什么之前一开始网页没有进行异步操作呢？因为那时候还没有出现XmlHttpRequest这个对象，当这个对象出现的时候才实现了不用刷新整个页面实现后台和服务器数据交换！</p>
+<p>为什么之前一开始网页没有进行异步操作呢？因为那时候还没有出现<strong>XmlHttpRequest</strong>这个对象，当这个对象出现的时候才实现了不用刷新整个页面实现后台和服务器数据交换！</p>
 <h6 id="实现Ajax技术需要三个方面内容"><a href="#实现Ajax技术需要三个方面内容" class="headerlink" title="实现Ajax技术需要三个方面内容:"></a>实现Ajax技术需要三个方面内容:</h6><figure class="image-box">
-                <img src=").png" alt="![3]()](![3" title="" class="">
-                <p>![3]()](![3</p>
+                <img src="3.png" alt="" title="" class="">
+                <p></p>
             </figure>
 <h5 id="2-XmlHttpRequest对象创建"><a href="#2-XmlHttpRequest对象创建" class="headerlink" title="2.XmlHttpRequest对象创建"></a>2.XmlHttpRequest对象创建</h5><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> request = <span class="keyword">new</span> XmlHttpRequest();</span></pre></td></tr></table></figure>
 <h5 id="3-http请求"><a href="#3-http请求" class="headerlink" title="3.http请求"></a>3.http请求</h5><p>   http是计算机通过网络进行通信的规则，是一种无状态协议（指的是不建立持久链接），</p>
 <p>  完整的http请求过程，通常包括以下七个步骤：</p>
 <figure class="image-box">
-                <img src=").png" alt="![4]( )](![4" title="" class="">
-                <p>![4]( )](![4</p>
+                <img src="4.png" alt="" title="" class="">
+                <p></p>
             </figure>
 <p> 一个http请求一般由四部分构成：</p>
 <figure class="image-box">
-                <img src=").png" alt="![5]()](![5" title="" class="">
-                <p>![5]()](![5</p>
+                <img src="5.png" alt="" title="" class="">
+                <p></p>
             </figure>
 <h6 id="get方法和post方法"><a href="#get方法和post方法" class="headerlink" title="get方法和post方法"></a>get方法和post方法</h6><figure class="image-box">
-                <img src=").png" alt="![6]()](![6" title="" class="">
-                <p>![6]()](![6</p>
+                <img src="6.png" alt="" title="" class="">
+                <p></p>
             </figure>
 <p> 一个http响应一般由三部分构成：<br><figure class="image-box">
-                <img src=").png" alt="![7]()](![7" title="" class="">
-                <p>![7]()](![7</p>
+                <img src="7.png" alt="" title="" class="">
+                <p></p>
             </figure><br>http状态码：</p>
 <figure class="image-box">
-                <img src=").png" alt="![8]()](![8" title="" class="">
-                <p>![8]()](![8</p>
+                <img src="8.png" alt="" title="" class="">
+                <p></p>
             </figure>
 <h5 id="4-XmlHttpRequest发送请求"><a href="#4-XmlHttpRequest发送请求" class="headerlink" title="4.XmlHttpRequest发送请求"></a>4.XmlHttpRequest发送请求</h5><figure class="image-box">
-                <img src=").png" alt="![9]()](![9" title="" class="">
-                <p>![9]()](![9</p>
+                <img src="9.png" alt="" title="" class="">
+                <p></p>
             </figure>
 <p>open（get or post， 相对地址或绝对地址，是否异步/true or false)<br>send方法当open方式为post时需要填写参数,如：<br><figure class="image-box">
-                <img src=").png" alt="![10]()](![10" title="" class="">
-                <p>![10]()](![10</p>
+                <img src="10.png" alt="" title="" class="">
+                <p></p>
             </figure></p>
 <h5 id="5-XmlHttpRequest取得响应"><a href="#5-XmlHttpRequest取得响应" class="headerlink" title="5.XmlHttpRequest取得响应"></a>5.XmlHttpRequest取得响应</h5><ul>
-<li>responseText： 获得字符串形式的响应数据</li>
-<li>responseXML ：获得XML形式的响应数据</li>
-<li>status和statusText：以数字和文本形式返回HTTP状态。</li>
-<li>getAllResponseHeader(): 获取所有的响应报头。</li>
-<li>getResponseHeader():查询响应中的某个字段的值。</li>
+<li><strong>responseText</strong>： 获得字符串形式的响应数据</li>
+<li><strong>responseXML</strong> ：获得XML形式的响应数据</li>
+<li><strong>status</strong>和<strong>statusText</strong>：以数字和文本形式返回HTTP状态。</li>
+<li><strong>getAllResponseHeader()</strong>: 获取所有的响应报头。</li>
+<li><strong>getResponseHeader()</strong>:查询响应中的某个字段的值。</li>
 </ul>
 <p><strong>如何去判断响应是否完成了？</strong><br>记住一个重要的一个属性<strong>readyState</strong>，监听这个属性的改变来确认当前响应的状态</p>
 <figure class="image-box">
-                <img src=").png" alt="![11]()](![11" title="" class="">
-                <p>![11]()](![11</p>
+                <img src="11.png" alt="" title="" class="">
+                <p></p>
             </figure>
 <p>下面代码可以完成监听：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> request = <span class="keyword">new</span> XmlHttpRequest();</span><br><span class="line">request.open(<span class="string">"get"</span>,<span class="string">"get.php"</span>,<span class="literal">true</span>);</span><br><span class="line">request.send();</span><br><span class="line"><span class="comment">// 监听readyState属性变化，绑定事件</span></span><br><span class="line">request.onreadystatechange = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="keyword">if</span>(request.readyState===<span class="number">4</span>&amp;&amp;reques.status===<span class="number">200</span>)&#123;</span><br><span class="line">    <span class="comment">// 执行的结构体</span></span><br><span class="line">    request.responseText</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <h2 id="明天继续学习剩下的三章哦。"><a href="#明天继续学习剩下的三章哦。" class="headerlink" title="明天继续学习剩下的三章哦。"></a>明天继续学习剩下的三章哦。</h2><h6 id="英语背诵表格"><a href="#英语背诵表格" class="headerlink" title="英语背诵表格"></a>英语背诵表格</h6><table>
@@ -326,7 +326,7 @@
     <div class="content">
         
 <span class="post-time">
-    post.last_updated<time datetime="2018-04-10T13:27:56.187Z" itemprop="dateUpdated">2018-04-10 21:27:56</time>
+    post.last_updated<time datetime="2018-04-10T13:49:32.685Z" itemprop="dateUpdated">2018-04-10 21:49:32</time>
 </span><br>
 
 
@@ -372,7 +372,7 @@
       </li>
       
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2018/04/10/aajax笔记/&title=《慕课网ajax笔记（一）》 — 勇敢的心&source=ajax基础知识了解" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2018/04/10/aajax笔记/&title=《慕课网ajax笔记（一）》 — 勇敢的心&source=Ajax基础知识了解" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
@@ -422,7 +422,7 @@
         <aside class="post-widget">
             <nav class="post-toc-wrap" id="post-toc">
                 <strong>目录</strong>
-                <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#ajax基础知识了解"><span class="post-toc-number">1.</span> <span class="post-toc-text">ajax基础知识了解</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#第一章介绍"><span class="post-toc-number">2.</span> <span class="post-toc-text">第一章介绍</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#第二章ajax概念介绍"><span class="post-toc-number">3.</span> <span class="post-toc-text">第二章ajax概念介绍</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#明天继续学习剩下的三章哦。"><span class="post-toc-number"></span> <span class="post-toc-text">明天继续学习剩下的三章哦。</span></a>
+                <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Ajax基础知识了解"><span class="post-toc-number">1.</span> <span class="post-toc-text">Ajax基础知识了解</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#第一章介绍"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">第一章介绍</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#第二章Ajax概念介绍"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">第二章Ajax概念介绍</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#明天继续学习剩下的三章哦。"><span class="post-toc-number">2.</span> <span class="post-toc-text">明天继续学习剩下的三章哦。</span></a></li></ol>
             </nav>
             <div class="toc-bar"><div>
         </aside>
@@ -524,7 +524,7 @@
       </li>
       
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2018/04/10/aajax笔记/&title=《慕课网ajax笔记（一）》 — 勇敢的心&source=ajax基础知识了解" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2018/04/10/aajax笔记/&title=《慕课网ajax笔记（一）》 — 勇敢的心&source=Ajax基础知识了解" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
